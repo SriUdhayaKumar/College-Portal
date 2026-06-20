@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+
+        <div class="view-container">
+        <h1>Student Details</h1>
+ 
+        <hr>
+          <% student.forEach(s=> { %>
+           <ul style="color: azure;">
+            <li>Student id :<%= s.id %></li>
+            <li>Student name : <%= s.stdname %></li>
+            <li>Age : <%= s.age %></li>
+            <li>Department : <%= s.department %></li>
+            <li>Year : <%= s.year %></li>
+            <li>Mark : <%= s.mark%></li>
+           </ul>
+
+           <button><a href="/delete/<%= s.id %>">Delete</a></button>
+
+              <hr>
+        <% }) %>
+        </div>
+        
+    </body>
+</html>
