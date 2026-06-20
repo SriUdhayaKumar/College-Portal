@@ -1,157 +1,152 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#141e30,#243b55);
-    min-height: 100vh;
+    min-height:100vh;
+    background:#f4fdf6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
-
-
-.Login-container{
-    width: 400px;
-    margin: 100px auto;
-    padding: 35px;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.4);
+.Login-container,
+.dashboard-container,
+.addStudent-Container,
+.Update-Container,
+.view-container,
+.search-container{
+    width:100%;
+    max-width:750px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    border-top:6px solid #16a34a;
 }
 
-.Login-container h1{
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
+h1{
+    text-align:center;
+    color:#15803d;
+    margin-bottom:20px;
 }
 
-.Login-container label{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+hr{
+    margin-bottom:25px;
+    border:1px solid #d1fae5;
 }
 
-.Login-container input{
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
+label{
+    color:#166534;
+    font-weight:600;
 }
 
-.Login-container button{
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #00bcd4;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
+input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #bbf7d0;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
 }
 
-.Login-container button:hover{
-    background: #0097a7;
+input:focus{
+    border-color:#16a34a;
 }
 
-
-
-
-.dashboard-container{
-    width: 600px;
-    margin: 60px auto;
-    padding: 35px;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.4);
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#16a34a;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
 }
 
-.dashboard-container h1{
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+button:hover{
+    background:#15803d;
 }
 
-.dashboard-container hr{
-    margin-bottom: 20px;
+ol{
+    list-style:none;
 }
 
-.dashboard-container ol{
-    list-style: none;
+ol li{
+    margin:15px 0;
 }
 
-.dashboard-container li{
-    margin: 15px 0;
+ol li a{
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:#dcfce7;
+    color:#166534;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.dashboard-container a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 15px;
-    background: rgba(255,255,255,0.15);
-    border-radius: 10px;
-    transition: 0.3s;
+ol li a:hover{
+    background:#16a34a;
+    color:white;
 }
 
-.dashboard-container a:hover{
-    background: #00bcd4;
-    transform: translateX(10px);
+ul{
+    list-style:none;
+    padding:15px;
+    margin-bottom:15px;
+    background:#f0fdf4;
+    border-left:5px solid #16a34a;
+    border-radius:10px;
 }
 
-.addStudent-Container{
-    width: 450px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px gray;
+ul li{
+    padding:6px 0;
+    color:#14532d;
 }
 
-.addStudent-Container h1{
-    text-align: center;
-    margin-bottom: 15px;
-    color: #1e3c72;
+.view-container button{
+    width:120px;
+    margin-right:10px;
+    margin-bottom:10px;
 }
 
-.addStudent-Container hr{
-    margin-bottom: 20px;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-.addStudent-Container label{
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
+@media(max-width:768px){
 
-.addStudent-Container input{
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border: 1px solid #999;
-    border-radius: 6px;
-    font-size: 16px;
-}
+    .Login-container,
+    .dashboard-container,
+    .addStudent-Container,
+    .Update-Container,
+    .view-container,
+    .search-container{
+        padding:20px;
+    }
 
-.addStudent-Container button{
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px;
-    background-color: #1e3c72;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-}
+    h1{
+        font-size:24px;
+    }
 
-.addStudent-Container button:hover{
-    background-color: #2a5298;
+    input,
+    button{
+        font-size:14px;
+    }
+
+    .view-container button{
+        width:100%;
+    }
 }

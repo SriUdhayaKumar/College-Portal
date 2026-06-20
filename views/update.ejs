@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="Update-Container">
+
+    <h1> Update Student Details</h1>
+<form action="/update/<%= student.id %>" method="post">
+
+    <input type="text" name="stdname" value="<%= student.stdname %>">
+    <br>
+
+    <input type="text" name="age" value="<%= student.age %>">
+    <br>
+
+    <input type="text" name="department" value="<%= student.department %>">
+    <br>
+
+    <input type="text" name="year" value="<%= student.year %>">
+    <br>
+
+    <input type="text" name="mark" value="<%= student.mark %>">
+    <br>
+
+    <button type="submit">Update</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

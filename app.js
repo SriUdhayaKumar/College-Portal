@@ -6,6 +6,8 @@ const Dashboard = require('./routes/dashboard.js');
 const addStudent = require(`./routes/add.js`);
 const viewStudent = require(`./routes/view.js`);
 const deleteStudent = require(`./routes/delete.js`);
+const updateStudent = require(`./routes/update.js`);
+const searchStudent = require("./routes/search.js");
 
 const student = require("./routes/student.js");
 
@@ -22,6 +24,8 @@ app.use("/addStudent",addStudent);
 
 app.use("/views",viewStudent);
 app.use("/delete",deleteStudent);
+app.use("/update",updateStudent);
+app.use("/search",searchStudent);
 
 app.listen(3000,()=>{
     console.log("Server running on the port 3000"); 

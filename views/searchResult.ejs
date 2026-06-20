@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="view-container">
+
+<% if(student){ %>
+
+    <h1>Student Found</h1>
+
+    <ul>
+        <li>ID : <%= student.id %></li>
+        <li>Name : <%= student.stdname %></li>
+        <li>Age : <%= student.age %></li>
+        <li>Department : <%= student.department %></li>
+        <li>Year : <%= student.year %></li>
+        <li>Mark : <%= student.mark %></li>
+    </ul>
+
+<% } else { %>
+
+    <h1>Student Not Found</h1>
+
+<% } %>
+
+</div>
+
+</body>
+</html>
